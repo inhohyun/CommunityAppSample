@@ -1,5 +1,6 @@
 package com.shoppi.shoppi.mysampleapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -66,6 +67,9 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this, "ok",Toast.LENGTH_SHORT).show()
                         Toast.makeText(this, auth.currentUser?.uid.toString(), Toast.LENGTH_SHORT).show()
 
+                        //로그인 성공시 이동
+                        val intent = Intent(this, BoardListActivity::class.java)
+                        startActivity(intent)
                     } else {
                         Toast.makeText(this, "no",Toast.LENGTH_SHORT).show()
                     }

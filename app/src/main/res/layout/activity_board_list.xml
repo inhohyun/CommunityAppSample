@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".BoardListActivity">
 
+    <Button
+        android:id="@+id/writenBtn"
+        android:text="글쓰기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
